@@ -49,7 +49,7 @@ local config = {
         },
         g = {
             mapleader = " ",                   -- sets vim.g.mapleader
-            localmapleader = ",",              -- sets vim.g.localmapleader
+            maplocalleader = ",",              -- sets vim.g.localmapleader
             autoformat_enabled = true,         -- enable or disable auto formatting at start (lsp.formatting.format_on_save must be enabled)
             cmp_enabled = true,                -- enable completion at start
             autopairs_enabled = true,          -- enable autopairs at start
@@ -144,6 +144,7 @@ local config = {
                 enabled = true,     -- enable or disable format on save globally
                 allow_filetypes = { -- enable format on save for specified filetypes only
                     -- "go",
+                    "tex",
                 },
                 ignore_filetypes = { -- disable format on save for specified filetypes
                     -- "python",
